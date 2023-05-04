@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping-list-angular';
+  selected = 'list'
+  onSelectChange(event: string) {
+    this.selected = event;
+  }
 }

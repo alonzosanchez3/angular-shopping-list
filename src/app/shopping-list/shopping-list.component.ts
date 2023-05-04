@@ -8,6 +8,10 @@ import { Ingredient } from '../shared/ingredient.model';
 })
 export class ShoppingListComponent {
 
+  addNewItem(item: Ingredient) {
+    this.ingredients.push(item)
+  }
+
   ingredients: Ingredient[] = [
     new Ingredient('apples', 5),
     new Ingredient('tomato', 10)
